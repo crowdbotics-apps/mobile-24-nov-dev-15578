@@ -82,6 +82,34 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
+  View_1: {},
+  CheckBox_2: {
+    textDecorationLine: "overline",
+    textTransform: "uppercase",
+    letterSpacing: 11
+  },
+
+  CheckBox_3: {
+    textDecorationLine: "line-through",
+    textTransform: "uppercase",
+    lineHeight: 32,
+    letterSpacing: 15
+  },
+
+  TextInput_4: {
+    textDecorationLine: "line-through",
+    textTransform: "uppercase"
+  },
+
+  TextInput_5: { textDecorationLine: "overline", textTransform: "uppercase" },
+  Text_6: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase"
+  },
+
+  Button_7: { textTransform: "capitalize" },
+  TextInput_8: { textDecorationLine: "underline", textTransform: "uppercase" },
   View_1: {},
   CheckBox_2: {
     textDecorationLine: "overline",
@@ -98,11 +126,22 @@ const styles = StyleSheet.create({
     textDecorationLine: "line-through",
     textTransform: "uppercase"
   },
-  TextInput_5: { textDecorationLine: "overline", textTransform: "uppercase" },
+  TextInput_5: {
+    textDecorationLine: "overline",
+    textTransform: "uppercase",
+    letterSpacing: 3
+  },
   Text_6: {
     textDecorationLine: "underline overline",
-    textTransform: "uppercase"
+    textTransform: "uppercase",
+    lineHeight: 17,
+    letterSpacing: 7
   },
   Button_7: { textTransform: "capitalize" },
-  TextInput_8: { textDecorationLine: "underline", textTransform: "uppercase" }
+  TextInput_8: {
+    height: 100,
+    textDecorationLine: "underline",
+    textTransform: "uppercase",
+    letterSpacing: 8
+  }
 })
