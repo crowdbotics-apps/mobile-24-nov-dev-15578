@@ -23,11 +23,17 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { Switch_3: true }
 
   render = () => (
     <View>
       <Text>Sample text content</Text>
+      <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        style={styles.Switch_3}
+        value={this.state.Switch_3}
+        onValueChange={nextChecked => this.setState({ Switch_3: nextChecked })}
+      />
     </View>
   )
 }
@@ -37,6 +43,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
-  Text_2: {}
+  Text_2: {},
+  View_1: {},
+  Text_2: {},
+  Switch_3: { alignSelf: "flex-start" }
 })
