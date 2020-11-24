@@ -112,10 +112,32 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline overline",
     textTransform: "uppercase"
   },
+
   View_1: {},
   Switch_2: { alignSelf: "flex-start" },
   DateTimePicker_3: {},
   CheckBox_4: { alignSelf: "center" },
+  CheckBox_5: {},
+  CheckBox_6: {
+    alignSelf: "center",
+    borderLeftWidth: 3,
+    borderRightWidth: 4,
+    borderTopWidth: 2,
+    borderBottomWidth: 5,
+    borderRadius: 7,
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    letterSpacing: 1
+  },
+
+  CheckBox_7: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase"
+  },
+  View_1: {},
+  Switch_2: { alignSelf: "flex-end" },
+  DateTimePicker_3: {},
+  CheckBox_4: { alignSelf: "center", textDecorationLine: "line-through" },
   CheckBox_5: {},
   CheckBox_6: {
     alignSelf: "center",
