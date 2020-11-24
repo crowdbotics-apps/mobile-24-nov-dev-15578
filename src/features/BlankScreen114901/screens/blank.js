@@ -27,7 +27,9 @@ export default class Blank extends React.Component {
     Switch_2: true,
     DateTimePicker_3: new Date(""),
     CheckBox_4: true,
-    CheckBox_5: false
+    CheckBox_5: false,
+    CheckBox_6: false,
+    CheckBox_7: true
   }
 
   render = () => (
@@ -59,6 +61,18 @@ export default class Blank extends React.Component {
         checked={this.state.CheckBox_5}
         onPress={nextChecked => this.setState({ CheckBox_5: nextChecked })}
       />
+      <CheckBox
+        title="Checkbox"
+        containerStyle={styles.CheckBox_6}
+        checked={this.state.CheckBox_6}
+        onPress={nextChecked => this.setState({ CheckBox_6: nextChecked })}
+      />
+      <CheckBox
+        title="Checkbox"
+        containerStyle={styles.CheckBox_7}
+        checked={this.state.CheckBox_7}
+        onPress={nextChecked => this.setState({ CheckBox_7: nextChecked })}
+      />
     </View>
   )
 }
@@ -68,9 +82,32 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Switch_2: { alignSelf: "flex-start" },
   DateTimePicker_3: {},
   CheckBox_4: {},
-  CheckBox_5: {}
+  CheckBox_5: {},
+  View_1: {},
+  Switch_2: { alignSelf: "flex-start" },
+  DateTimePicker_3: {},
+  CheckBox_4: {},
+  CheckBox_5: {},
+  CheckBox_6: {
+    borderLeftWidth: 3,
+    borderRightWidth: 4,
+    borderTopWidth: 2,
+    borderBottomWidth: 5,
+    borderRadius: 7,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
+    lineHeight: 12,
+    letterSpacing: 1
+  },
+  CheckBox_7: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase"
+  }
 })
