@@ -51,6 +51,7 @@ export default class Blank extends React.Component {
         title="Radio button"
         checkedIcon="dot-circle-o"
         uncheckedIcon="circle-o"
+        containerStyle={styles.CheckBox_4}
         checked={this.state.CheckBox_4}
         onPress={nextChecked => this.setState({ CheckBox_4: nextChecked })}
       />
@@ -104,6 +105,27 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline overline",
     textTransform: "uppercase",
     lineHeight: 12,
+    letterSpacing: 1
+  },
+
+  CheckBox_7: {
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase"
+  },
+  View_1: {},
+  Switch_2: { alignSelf: "flex-start" },
+  DateTimePicker_3: {},
+  CheckBox_4: { alignSelf: "center" },
+  CheckBox_5: {},
+  CheckBox_6: {
+    alignSelf: "center",
+    borderLeftWidth: 3,
+    borderRightWidth: 4,
+    borderTopWidth: 2,
+    borderBottomWidth: 5,
+    borderRadius: 7,
+    textDecorationLine: "underline overline",
+    textTransform: "uppercase",
     letterSpacing: 1
   },
   CheckBox_7: {
